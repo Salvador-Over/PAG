@@ -1,0 +1,141 @@
+/* NavBanner.css */
+
+.nav-bar {
+  background-color: #131921;
+  padding: 23px 0;
+  position: relative; /* Para poder posicionar elementos hijos en relación a esta barra */
+  color: white !important;
+}
+
+.toggle-button {
+  color: white;
+  background-color: #73859e; /* Color del botón */
+  border: none;
+  padding: 10px 5px;
+  cursor: pointer;
+  position: absolute; /* Posiciona el botón de mostrar/ocultar */
+  left: 10px; /* Mueve el botón hacia la izquierda */
+  top: 5px; /* Ajusta la altura */
+  white-space: pre-line; /* Permite que el texto se ajuste en varias líneas */
+  width: 120px; /* Ancho fijo para el botón */
+  font-size: 25px; /* Tamaño de fuente aumentado */
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  color: #131921;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #131921;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #fff;
+}
+
+.banner-content p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.categories-menu {
+  z-index: 2;
+  position: absolute; /* Para que el menú se superponga al contenido */
+  left: 0px; /* Alinea el menú a la izquierda */
+  top: auto; /* Ajusta según sea necesario para estar debajo de la barra de navegación */
+  width: 400px; /* Ancho del menú ajustado */
+  height: auto; /* Altura del menú ajustada para más espacio */
+  background-color: #131921; /* Color de fondo del menú igual que la barra lateral principal */
+  border: 1px solid #ccc; /* Borde del menú */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 20px; /* Espacio interno para el contenido */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto de profundidad */
+  z-index: 1000; /* Para asegurarte de que el menú esté por encima de otros elementos */
+  overflow-y: auto; /* Desplazamiento vertical si hay mucho contenido */
+}
+
+/* Overlay oscuro */
+.overlay {
+  position: fixed; /* Fijo para cubrir toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro semi-transparente */
+  z-index: 900; /* Debajo del menú pero encima de otros elementos */
+  display: none; /* Oculto por defecto */
+}
+
+.categories-menu h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em; /* Tamaño del título de categorías */
+  font-weight: bold; /* En negrita */
+  color: white; /* Color del texto del título */
+}
+
+.category-links {
+  list-style: none;
+  padding: 0;
+}
+
+.category-links li {
+  margin: 5px 0;
+}
+
+.category-links a {
+  text-decoration: none;
+  color: #fff; /* Color del texto en el botón */
+  font-size: 18px; /* Tamaño de letra más grande */
+  font-weight: bold; /* En negrita */
+  padding: 15px 20px; /* Padding para los enlaces de categorías */
+  background-color: #131921; /* Color de fondo para los enlaces de categorías */
+  border-radius: 5px; /* Esquinas redondeadas */
+  transition: background-color 0.3s; /* Transición para el hover */
+  display: block; /* Hacer que el enlace ocupe todo el espacio del botón */
+}
+
+.category-links a:hover {
+  background-color: #005bb5; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilos para el botón de cerrar */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 20px; /* Tamaño de la X */
+  cursor: pointer; /* Cursor como puntero */
+  color: #2622f0; /* Color de la X */
+}
+
+.iconos svg {
+  width: 30px !important;
+  margin-left: 10px !important;
+  fill: white !important;
+  display: none !important;
+}
+
+.category-links a:hover .iconos svg {
+  display: inline-block !important;
+}
+
+.iconoJuego, .iconoComputadora, .iconoCelular, .iconoTablet, .iconoAccesorio, .iconoTelevision, .iconoMonitor {
+  margin-top: 5px;
+}

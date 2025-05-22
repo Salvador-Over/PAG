@@ -1,0 +1,88 @@
+/* productos.css */
+.productos-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .productos-container h2, p {
+    color: black !important;
+  }
+  
+  .botones-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .menu-boton {
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.8s ease-in-out;
+  }
+  
+  .menu-boton:hover {
+    background-color: #131921 !important;
+  }
+  
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    transition: all;
+  }
+  
+  .producto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .producto-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .boton-eliminar,
+  .boton-editar {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #c62828; /* Color del botón eliminar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Oculto inicialmente */
+    visibility: hidden; /* Oculto inicialmente */
+  }
+
+  .boton-eliminar:hover {
+    background-color: #d32f2f;
+  }
+  
+  .boton-editar {
+    background-color: #0b830f; /* Color del botón editar */
+    margin-left: 10px;
+  }
+
+  .boton-editar:hover {
+    background-color: #2e7d32;
+  }
+  
+  /* Mostrar los botones al hacer hover en el producto */
+  .producto-card:hover .boton-eliminar,
+  .producto-card:hover .boton-editar {
+    opacity: 1; /* Hacer visibles los botones al pasar el mouse */
+    visibility: visible;
+  }  

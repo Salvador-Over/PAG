@@ -1,0 +1,60 @@
+/* Home.css */
+.home-container {
+    position: relative;
+    height: auto;
+    margin: 0;
+}
+
+footer {
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+  }  
+
+.wave {
+    position: absolute;
+    bottom: 25px; /* Ajuste al borde del footer */
+    width: 300%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: wave 7s infinite linear;
+    opacity: 0.8;
+    z-index: 1;
+    clip-path: polygon(0 50%, 10% 60%, 20% 50%, 30% 60%, 40% 50%, 50% 60%, 60% 50%, 70% 60%, 80% 50%, 90% 60%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.wave:nth-child(5) {
+    bottom: 27px;
+    opacity: 0.4;
+    animation: wave 9s infinite linear;
+}
+
+.wave:nth-child(6) {
+    bottom: 30px;
+    opacity: 0.6;
+    animation: wave 11s infinite linear;
+}
+
+  
+  .home-container .wave, .wave:nth-child(4), .wave:nth-child(5) {
+    left: -450px;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    75% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }

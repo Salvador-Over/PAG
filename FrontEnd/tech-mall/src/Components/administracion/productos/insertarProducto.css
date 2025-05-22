@@ -1,0 +1,104 @@
+/* Contenedor principal */
+.crear-producto-container {
+  max-width: 500px; /* Ancho máximo del formulario */
+  margin: 50px auto; /* Centrado vertical y horizontal */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra más marcada */
+  background-color: #f9f9f9; /* Color de fondo claro */
+  border: 1px solid #e0e0e0; /* Borde suave */
+  color: black !important;
+}
+
+.crear-producto-container h2 {
+  color: black !important;
+}
+
+/* Título del formulario */
+.crear-producto-container h2 {
+  text-align: center; /* Centrar el texto */
+  color: #333; /* Color del texto */
+  margin-bottom: 30px; /* Margen inferior */
+  font-family: 'Roboto', sans-serif; /* Tipografía moderna */
+  font-size: 28px; /* Tamaño de fuente */
+}
+
+/* Tooltip para mensajes */
+.tooltip {
+  margin-bottom: 20px; /* Margen inferior */
+  padding: 12px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #e0f7fa; /* Color de fondo suave */
+  color: #00695c !important; /* Color del texto */
+  border: 1px solid #004d40; /* Borde de color */
+  text-align: center; /* Centrar el texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Disposición vertical */
+  color: black;
+}
+
+/* Estilo de los campos de entrada */
+input, select {
+  padding: 12px; /* Espaciado interno */
+  margin-bottom: 15px; /* Espaciado inferior */
+  border: 2px solid #ddd; /* Borde suave */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: border-color 0.3s; /* Transición para el borde */
+  margin-left: 5px;
+}
+
+/* Efecto al enfocar los campos */
+input:focus, select:focus {
+  border-color: #131921; /* Cambia el color del borde */
+  outline: none; /* Quitar el contorno predeterminado */
+}
+
+/* Estilo del botón de enviar */
+button[type="submit"] {
+  background-color: #131921; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 12px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  transition: background-color 0.3s, transform 0.3s; /* Efecto de transición */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+button[type="submit"]:hover {
+  background-color: #131921; /* Color más oscuro al pasar el cursor */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Estilo del botón de volver */
+.volverAdmin {
+  background-color: transparent; /* Sin color de fondo */
+  color: #e9f1f1; /* Color del texto */
+  padding: 12px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  margin-top: 20px; /* Margen superior */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Efecto de transición */
+  background-color: #131921; /* Color de fondo al pasar el cursor */
+
+}
+
+/* Efecto al pasar el cursor sobre el botón de volver */
+.volverAdmin:hover {
+  background-color: #131921; /* Color de fondo al pasar el cursor */
+  color: white; /* Color del texto */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.volverAdmin{
+    background-color: #131921; /* Color de fondo al pasar el cursor */
+}
+

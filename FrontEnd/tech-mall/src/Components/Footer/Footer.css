@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 10px 20px;
+  padding-top: 15px;
+  background-color: #333;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  padding-right: 10px;
+  color: white !important;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.svgIcon {
+  width: 28px;
+  height: 28px;
+}

@@ -1,0 +1,65 @@
+.container-perfil {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.perfil-container {
+  color: black !important;
+  width: 500px;
+  margin: auto;
+  --margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: center; /* Centra el texto en el contenedor */
+}
+
+.perfil-container h2, p {
+  color: black !important;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex; /* Utiliza Flexbox para organizar los botones */
+  flex-direction: column; /* Organiza los botones en una columna */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+button {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #007bff; /* Color de fondo para los botones */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+.eliminar {
+  background-color: #dc3545; /* Color diferente para el botón de eliminar */
+}
+
+.eliminar:hover {
+  background-color: #c82333; /* Color al pasar el ratón */
+}
+
+.admin-button {
+  background-color: #28a745; /* Color específico para el botón admin */
+}
+
+.admin-button:hover {
+  background-color: #218838; /* Color al pasar el ratón */
+}

@@ -1,0 +1,53 @@
+/* menuAdministrativo.css */
+
+.menu-admin-container {
+  display: flex;
+  color: white !important;
+  flex-direction: column;
+  align-items: center; /* Color de fondo del contenedor */
+  padding: 50px; /* Espacio interno alrededor del contenido */
+  height: 100vh; /* Altura completa de la ventana del navegador */
+}
+
+h2 {
+  font-size: 2rem; /* Tamaño del encabezado */
+  margin-bottom: 10px; /* Espacio debajo del encabezado */
+  color: white !important; /* Color del texto del encabezado */
+}
+
+p {
+  margin-bottom: 30px; /* Espacio debajo del párrafo */
+  color: white !important; /* Color del texto del párrafo */
+  font-style: italic; /* Estilo en cursiva */
+}
+
+.menu-options {
+  display: flex; /* Usar flexbox para alinear las opciones del menú */
+  gap: 20px; /* Espacio entre las opciones del menú */
+}
+
+.menu-item {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column; /* Apila el icono y el texto verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+  width: 150px; /* Ancho de cada opción del menú */
+  height: 150px; /* Altura de cada opción del menú */
+  background-color: #131921; /* Color de fondo de las opciones */
+  color: white; /* Color del texto */
+  border-radius: 10px; /* Esquinas redondeadas */
+  transition: transform 0.3s, background-color 0.3s; /* Transición suave para hover */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el elemento */
+}
+
+.menu-item:hover {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+  background-color: #0e8646; /* Color de fondo al pasar el mouse */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más marcada */
+}
+
+.menu-icon {
+  font-size: 2.5rem; /* Tamaño del icono */
+  margin-bottom: 10px; /* Espacio debajo del icono */
+}
